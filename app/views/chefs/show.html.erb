@@ -1,0 +1,7 @@
+<h1>Show Chef <small> <%= link_to('edit', edit_chef_path(@chef.id)) %> </small> </h1>
+
+<h2>Chef: <%= @chef.name %></h2>
+<br/>
+<h3>Specialty: <%= @chef.specialty %></h3>
+<h3>Tv Show: <%= @chef.show %></h3>
+<div><%= image_tag(@chef.avatar, style: 'width: 150px') %></div>

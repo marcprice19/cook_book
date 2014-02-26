@@ -1,0 +1,23 @@
+<h1>All Chefs YO</h1>
+
+<table>
+  <tr>
+    <th>Chef</th>
+    <th>Show</th>
+    <th>Specialty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @chefs.each do |chef| %>
+  <tr>
+    <td><%= chef.name %></td>
+    <td><%= chef.show %></td>
+    <td><%= chef.specialty %></td>
+    <td><%= link_to('Show', chef_path(chef.id)) %></td>
+    <td><%= link_to('Edit', edit_chef_path(chef.id)) %></td>
+   <td><%= link_to('Destroy', chef_path(chef.id), method: :delete, confirm: "Are you sure yo?") %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,5 +1,7 @@
 CookBook::Application.routes.draw do
   resources :chefs
   resources :recipes
-  resources :static_pages
+
+  get '/' => 'static_pages#home'
+  get "/about" => "static_pages#about"
 end
