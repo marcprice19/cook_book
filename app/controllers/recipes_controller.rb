@@ -50,6 +50,6 @@ end
 private
 
   def recipe_params
-    params.require(:recipe).permit(:title, :description, :cook_time, :ingredients, :instructions, :picture)
+    params.require(:recipe).permit(:title, :description, :cook_time, :ingredients, :instructions, :picture, :chef_id)
   end
   

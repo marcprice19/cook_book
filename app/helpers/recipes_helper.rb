@@ -1,6 +1,6 @@
 module RecipesHelper
 
-  def options_for_select_chef
+  def options_for_select_chefs
     list_options = []
     chefs = Chef.all
     chefs.each do |chef|

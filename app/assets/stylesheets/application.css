@@ -9,5 +9,18 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
+
+li {
+  list-style: none;
+  display: inline;
+  
+
+
+}
+body {
+
+  background-image: url(http://cdn-images.9cloud.us/528/piccit_thug_life_1920x1080_595331694.1680x0.jpg); 
+  background-repeat: no-repeat;
+
+}
